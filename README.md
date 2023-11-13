@@ -1,4 +1,4 @@
-# Talk-to-HPE-ILO-2
+# Talk to HPE ILO2
 
 ## BLUF: ILO2 is obsolete but you can still use it if you update the firmware as much as possible.
 
