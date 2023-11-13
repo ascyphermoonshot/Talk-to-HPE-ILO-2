@@ -22,7 +22,7 @@
 2. Log in with your username and password (the default user is Administrator, the default password is written on a sticker somewhere in your server).
 3. It will give you a security error, accept it
 
-### updating the ILO2 firmware
+### Updating the ILO2 firmware
 1. Go to the last tab and go to `Firmware Update`
 2. Upload your new firmware and run the update
 3. If you have an ILO2 Advanced license key add it now
@@ -41,4 +41,22 @@
 > [!NOTE]
 > The virtual console will not work, that`s normal.
 
-##Talking to ILO through SSH 
+## Talking to ILO2 through SSH
+### Talking to ILO2 through SSH on Linux
+
+    ssh -okexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss -c aes128-cbc Administrator@ip_address_you_wrote_down
+    
+> [!NOTE]
+> The command above is a handful, you may want to add an alias that assigns that to a shorter command.
+### Talking to ILO2 through SSH on Android
+1. Open Termux
+
+    ssh -okexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss -c aes128-cbc Administrator@ip_address_you_wrote_down
+> [!NOTE]
+> The command above is a handful, you may want to add an alias that assigns that to a shorter command.
+
+### Talking to ILO through SSH on Windows
+1. install PuTTY
+2. Open PuTTY and add the user, IP and password
+3. Enable diffie-hellman-group1-sha1
+4. Launch the session
