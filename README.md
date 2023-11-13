@@ -52,6 +52,7 @@
 1. Open Termux
 
     ssh -okexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-dss -c aes128-cbc Administrator@ip_address_you_wrote_down
+
 > [!NOTE]
 > The command above is a handful, you may want to add an alias that assigns that to a shorter command.
 
